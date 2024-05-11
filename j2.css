@@ -1,0 +1,38 @@
+body {
+    background-color: #ADD8E6; /* Light blue background */
+    font-size: 20px; /* Increased font size */
+}
+.label {
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 5px;
+    vertical-align: top;
+    font-size: 20px;
+}
+.element {
+    background-color: #ff0000; 
+    color: #ffffff; 
+    padding: 20px; 
+}
+
+
+#formula span {
+    border: 1px solid black;
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: white;
+    min-width: 50px;
+    display: inline-block;
+}
+
+#values div {
+    border: 1px solid blue;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+#values div:active {
+    opacity: 0.6;
+}

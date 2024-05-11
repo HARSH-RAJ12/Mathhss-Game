@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Math Game: Lateral Surface Area</title>
+<link rel="stylesheet" href="j2.css">
+</head>
+<body style="background-color: #add8e6;">
+<h1 style="text-align: center; color: #333;">Calculate the Lateral Surface Area</h1>
+<div id="formula" style="margin: 20px; padding: 10px; background-color: #fff; border-radius: 10px; text-align: center;">
+    2 × <div class="label">Height</div> × [(<div class="label">Length</div>) + (<div class="label">Width</div>)] = 
+    <div class="label">Lateral Surface Area:</div>
+</div>
+
+<div id="formula" style="margin: 20px; padding: 10px; background-color: #fff; border-radius: 10px; text-align: center;">
+    2 × <span id="height" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 2px solid #333; border-radius: 5px; padding: 5px; margin: 5px; background-color: lightcyan; color: black";>Drag Height here</span> × (<span id="length" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 2px solid #333; border-radius: 5px; padding: 5px; margin: 5px; background-color: greenyellow; color: black">Drag Length here</span> + <span id="width" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 2px solid #333; border-radius: 5px; padding: 5px; margin: 5px; background-color: lightsalmon; color: black">Drag Width here</span>) = 
+        <span id="targetArea" style="font-weight: bold;">50 cm²</span> <br> <br>
+        2 × <span id="height" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 2px solid #333; border-radius: 5px; padding: 5px; margin: 5px; background-color: lightcyan; color: black";>Drag Height here</span> × (<span id="length" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 2px solid #333; border-radius: 5px; padding: 5px; margin: 5px; background-color: greenyellow; color: black">Drag Length here</span> + <span id="width" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 2px solid #333; border-radius: 5px; padding: 5px; margin: 5px; background-color: lightsalmon; color: black">Drag Width here</span>) = 
+        <span id="targetArea" style="font-weight: bold;">64 cm²</span> <br> <br>
+        2 × <span id="height" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 2px solid #333; border-radius: 5px; padding: 5px; margin: 5px; background-color: lightcyan; color: black";>Drag Height here</span> × (<span id="length" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 2px solid #333; border-radius: 5px; padding: 5px; margin: 5px; background-color: greenyellow; color: black">Drag Length here</span> + <span id="width" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 2px solid #333; border-radius: 5px; padding: 5px; margin: 5px; background-color: lightsalmon; color: black">Drag Width here</span>) = 
+        <span id="targetArea" style="font-weight: bold;">66 cm²</span> <br> <br>
+        2 × <span id="height" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 2px solid #333; border-radius: 5px; padding: 5px; margin: 5px; background-color: lightcyan; color: black";>Drag Height here</span> × (<span id="length" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 2px solid #333; border-radius: 5px; padding: 5px; margin: 5px; background-color: greenyellow; color: black">Drag Length here</span> + <span id="width" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 2px solid #333; border-radius: 5px; padding: 5px; margin: 5px; background-color: lightsalmon; color: black">Drag Width here</span>) = 
+        <span id="targetArea" style="font-weight: bold;">56 cm²</span> <br> <br>
+</div>
+<table style="margin: 20px auto; border-collapse: collapse;">
+    <tr id="values">
+      <td style="padding: 10px;"><strong></strong></td>
+      <td><div draggable="true" ondragstart="drag(event)" id="1 cm" style="background-color: #ffcccc; border: 2px solid #333; border-radius: 5px; padding: 5px; cursor: move;">1 cm</div></td>
+      <td><div draggable="true" ondragstart="drag(event)" id="2 cm" style="background-color: #ffcccc; border: 2px solid #333; border-radius: 5px; padding: 5px; cursor: move;">2 cm</div></td>
+      <td><div draggable="true" ondragstart="drag(event)" id="3 cm" style="background-color: #ffcccc; border: 2px solid #333; border-radius: 5px; padding: 5px; cursor: move;">3 cm</div></td>
+      <td><div draggable="true" ondragstart="drag(event)" id="4 cm" style="background-color: #ffcccc; border: 2px solid #333; border-radius: 5px; padding: 5px; cursor: move;">4 cm</div></td>
+      <td><div draggable="true" ondragstart="drag(event)" id="5 cm" style="background-color: #ffcccc; border: 2px solid #333; border-radius: 5px; padding: 5px; cursor: move;">5 cm</div></td>
+      <td><div draggable="true" ondragstart="drag(event)" id="6 cm" style="background-color: #ffcccc; border: 2px solid #333; border-radius: 5px; padding: 5px; cursor: move;">6 cm</div></td>    
+  </tr>
+  </table>
+  <button onclick="checkAnswer()" style="margin: 20px auto; display: block; padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">Check Answer</button>
+  <div id="result" style="text-align: center; font-weight: bold; font-size: 18px;"></div>
+  <script src="j2.js"></script>
+  </body>
+  </html>
